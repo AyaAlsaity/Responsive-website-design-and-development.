@@ -1,0 +1,95 @@
+@import url('https://font/googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header{grid-area: Header;}
+.Box-1{grid-area: Box1;}
+.Box-2{grid-area: Box2;}
+.Box-3{grid-area: Box3;}
+.Box-4{grid-area: Box4;}
+.b{
+    display: grid;
+    grid-template-areas: 
+    'Header Header Header Header Header Header'
+    'Box1 Box1 Box1 Box2 Box2 Box2'
+    'Box3 Box3 Box3 Box4 Box4 Box4';
+    grid-gap:20px;
+   
+}
+
+.header p1{
+  font-size: 31px;
+  color: rgb(145, 145, 138);
+}
+body h1{
+  color: rgb(73, 73, 67);
+}
+body{
+    background-color: beige;
+    color: rgb(153, 148, 148);
+    margin:40px;
+}
+
+.b{
+    float: left;
+    flex-direction: row;
+    align-items:stretch;
+}
+
+.b div{
+    border-top-style:solid ;
+    border-radius: 8px;
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom:80px;
+}
+
+.Box-1{
+    flex: 1px;
+    margin-top:40px;
+    border-color:aqua ;
+    
+}
+
+.Box-2{
+    flex: 1px;
+    margin-top:20px;
+    border-color:red ;
+    
+}
+
+.Box-3{
+    flex: 1px;
+    margin-top:20px;
+    border-color:yellow ;
+    
+}
+
+.Box-4{
+    flex: 1px;
+    margin-top:20px;
+    border-color:blue ;
+   
+   
+}
+
+
+[class*="Box"]{
+    flex-basis: 100%;
+}
+
+i{
+    color: black;
+    font-size: 35px;
+    text-align: right;
+    text-indent: 280px;
+
+}
+i:hover{
+    color: rgb(107, 80, 80);
+}
